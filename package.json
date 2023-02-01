@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Al-Quran dan Terjemahan",
   "productName": "Al-Quran",
-  "author": "Nur Muhammad <blog.nurmuhammad@gmail.com>",
+  "author": "Powered by ngekoding.github.io",
   "private": true,
   "scripts": {
     "lint": "eslint --ext .js,.vue ./",

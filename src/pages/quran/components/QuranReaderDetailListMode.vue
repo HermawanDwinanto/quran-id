@@ -45,14 +45,20 @@
                   />
                 </q-item-label>
                 <q-item-label class="q-pt-sm translation-wrap">
-                  <span>{{ ayah.verse_number + ". " }}</span>
+                  <q-avatar
+                    key="sm"
+                    size="sm"
+                    color="accent"
+                    text-color="white"
+                  >{{ayah.verse_number}}</q-avatar>
+                  &nbsp;
                   <span v-html="surah.translations[index].text" />
                 </q-item-label>
                 <q-item-label class="q-pt-sm row justify-end">
                   <q-btn
                     size="sm"
                     :color="
-                      isAyahPlaying(ayah.verse_number) ? 'primary' : 'grey-3'
+                      isAyahPlaying(ayah.verse_number) ? 'secondary' : 'primary'
                     "
                     :text-color="
                       isAyahPlaying(ayah.verse_number) ? '' : 'black'
@@ -69,7 +75,7 @@
                   <q-btn
                     size="sm"
                     icon="mdi-dots-vertical-circle-outline"
-                    color="grey-3"
+                    color="warning"
                     text-color="black"
                     class="q-ml-sm"
                     round
